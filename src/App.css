@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+
+*, :after, :before {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Raleway', 'Amatic', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  overflow-X: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fff !important;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+  max-width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+a:focus,
+a:hover {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+i,
+span,
+a {
+  display: inline-block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+  line-height: 1.3em
+}
+
+ul,
+ol {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+p {
+    font-size: 14px;
+    color: #4f4f4f;
+    font-family: 'Raleway', Sans-serif;
+    margin: 0px;
+}
+
+a, a:focus, a:hover, a:visited {
+  text-decoration: none;
+}
+
+a {
+  background-color: transparent;
+}
+
+h2 {
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    text-transform: uppercase;
+}
+
+h4 {
+    color: #050505;
+    font-family: 'Libre Baskerville';
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 2em;
+}
+
+.row {
+  flex-wrap: nowrap;
+}
+
+.section {
+  height: 825px;
+}
+
+.btn-icon {
+  vertical-align: sub;
+
 }

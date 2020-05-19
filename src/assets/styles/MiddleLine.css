@@ -1,0 +1,9 @@
+.middle-line-container {
+    height: 110px;
+}
+
+.middle-line {
+    border-right: 2px solid #7a7a7a ;
+    height: 90px;
+    left: 50%;
+}

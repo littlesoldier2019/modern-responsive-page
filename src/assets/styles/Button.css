@@ -1,0 +1,17 @@
+.btn {
+    background-color:  #050505;;
+  }
+  
+  .btn > a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .btn-container {
+    margin-top: 4rem;
+  }
+  
+  .btn-icon {
+    vertical-align: sub;
+  }

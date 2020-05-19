@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import UnderConstruction from './components/UnderConstruction';
+import MainPage from './components/mainPage/MainPage';
 
 function App() {
   return (
     <div className="App">
-      <UnderConstruction />
+      <MainPage />
     </div>
   );
 }
