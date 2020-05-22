@@ -1,0 +1,38 @@
+.footer-contact div {
+    border-bottom: 2px solid  #7a7a7a;
+}
+
+.footer-contact .list-group-item {
+    cursor: pointer;
+}
+
+.footer-sitemap {
+    background-color: #1a181a;
+}
+
+.footer-sitemap span {
+    color: #555;
+}
+
+.footer-sitemap .list-group-item {
+    font-family: "Open Sans", Sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #050505;
+    background-color: #efefef;
+    width: fit-content;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+
+.footer-sitemap .list-group-item:hover {
+    transform: scale(1.1);
+}
+
+.footer-sitemap .list-group-item img {
+    vertical-align: initial;
+}
+
+.footer-sitemap .list-group-item .facebook-icon {
+    vertical-align: middle;
+}

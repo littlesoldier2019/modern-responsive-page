@@ -2,24 +2,28 @@ import React from 'react';
 import Header from '../share/Header';
 import Hero from './Hero';
 import MiddleLine from '../share/MiddleLine';
-import Slogan from './Slogan';
+import Slogan from '../share/Slogan';
 import Feature from './Feature';
 import SectionLeft from './SectionLeft';
 import SectionRight from './SectionRight';
-import ContactInfo from '../share/ContactInfo';
+import ContactForm from '../share/ContactForm';
+import Brochure from '../share/Brochure';
+import Footer from '../share/Footer';
 
 function MainPage() {
   return (
     <>
-      {/* <Header />
+      <Header />
       <Hero />
       <MiddleLine />
-      <Slogan />
+      <Slogan text='"Wij produceren uw stalen deuren &amp; meubels compleet op maat"'/>
       <SectionLeft />
-      <SectionRight /> */}
+      <SectionRight />
       <Feature />
       <MiddleLine />
-      <ContactInfo />
+      <ContactForm />
+      <Brochure />
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,16 @@
+.brochure {
+    background-color: #F5F5F5;
+    margin: auto;
+}
+
+.brochure-image {
+    transition: transform .3s;
+}
+
+.brochure-image:hover {
+    transform: scale(1.25);
+}
+
+.btn-left {
+    justify-content: flex-start;
+}

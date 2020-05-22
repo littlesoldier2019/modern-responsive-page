@@ -3,6 +3,11 @@
   box-sizing: border-box;
 }
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: 'Raleway', 'Amatic', sans-serif;
   font-weight: normal;
@@ -76,12 +81,20 @@ h2 {
     text-transform: uppercase;
 }
 
+
 h4 {
     color: #050505;
     font-family: 'Libre Baskerville';
     font-size: 40px;
     font-weight: 400;
-    line-height: 2em;
+}
+
+h5 {
+    font-family: "Open Sans", Sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: white;
+    text-transform: uppercase;
 }
 
 .row {

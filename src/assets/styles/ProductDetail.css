@@ -1,0 +1,9 @@
+
+.product-item1 {
+    border: solid 2px #f5f5f5;
+}
+
+.product-item2 li {
+    font-size: 14px;
+    padding: 1rem;
+}

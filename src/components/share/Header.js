@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white mx-5">
         <a className="navbar-brand" href="#">
-            <img src={Logo} width="30%" height="30%" alt="favicon" loading="lazy"/>
+            <img src={Logo} width="100%" height="100%" alt="favicon" loading="lazy"/>
         </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -17,16 +17,13 @@ const Header = () => {
                     <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item px-3">
-                    <a className="nav-link" href="#">Features</a>
+                    <a className="nav-link" href="#">About Us</a>
                 </li>
                 <li className="nav-item px-3">
-                    <a className="nav-link" href="#">Pricing</a>
-                </li>
-                <li className="nav-item px-3">
-                    <a className="nav-link" href="#">Features</a>
+                    <a className="nav-link" href="#">Products</a>
                 </li>
                 <li className="nav-item px-3 quotation-btn">
-                    <a className="nav-link" id='quotation-link' href="#">OFFER</a>
+                    <a className="nav-link" id='quotation-link' href="#">GET QUOTATION</a>
                 </li>
             </ul>
         </div>
