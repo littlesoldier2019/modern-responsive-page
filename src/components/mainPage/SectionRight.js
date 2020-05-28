@@ -5,10 +5,7 @@ import Button from '../share/Button';
 const SectionRight = () => {
   return (
     <div className='container'>
-        <div className="row flex-md-column-reverse flex-lg-row">
-            <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center py-5 section section-item">
-                <img className='py-5' src={image} alt='Kielo Consultancy'/>
-            </div>
+        <div className="row flex-lg-row-reverse">
             <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center px-xs-2 px-md-5  section section-item">
                 <div>
                     <h2 className="mb-5">make the sourcing process become simple and cost effective</h2>
@@ -25,6 +22,9 @@ const SectionRight = () => {
                     </p>
                     <Button text='check availability' type='button'/>
                 </div>
+            </div>
+            <div className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center py-5 section section-item">
+                <img className='py-5' src={image} alt='Kielo Consultancy'/>
             </div>
         </div>
     </div>
