@@ -4,10 +4,8 @@ import Logo from '../../assets/image/KieloConsultancy.JPG';
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white mx-5">
-        <a className="navbar-brand" href="#">
+    <nav className="navbar navbar-brand navbar-expand-lg navbar-light bg-white mx-5">
             <img src={Logo} width="100%" height="100%" alt="favicon" loading="lazy"/>
-        </a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
         </button>

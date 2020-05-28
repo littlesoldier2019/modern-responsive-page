@@ -23,7 +23,7 @@ const Footer = () => {
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-4">
                     <ul className="list-group list-group-flush">
-                        <li className="list-group-item mb-2 text-center"><img className='mr-2' alt='Kielo email ' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABoElEQVRIie2UsYsTQRSHvxeXra0spgz4F4iFB3bRxlJsDi6E4MwkcGBlc417lYViIUhgd4toKXbaaWVhY5firvIqe685hJCdZ5Mcub3dXLLB7r5u3rz5frzHsnDNFUi5MBwO27PZrN1EFkXRyWg0OrlQKzcVRdEVkRdNAoqiOASSlQELVPXBJnIR+VpVrw3IsuzbJgHOucp6a/lgrd0BdjcRl9idO865MIGIfAdubBFwe+4495ZX1AIC0HLOZdPp9Pl4PD5dZez1ejfjOH41PwZKW2ldfsJr4BDoxnF8bK19XCd3zj2K43gC9IC3IvKm3FMV8DdN0ySEcBf4LSKfvPef+/2+WTQMBoNbzrkPwBfgj6rupGn6TFXP1gkAIM/ziTHmnqoeqGoniqKJ977rve+GEI6AJ6p6YIy5k2XZzzpP7WcKkCTJDHjpnPsIZKr6fn71I4TwNM/z41XvV06wTJqmv4wxHWAf2DfG3F9HDldMsEySJAF4t27/grUm2Ib/HlC1ora1ttPQd+k3XxWwJyJ7DQMAtDZAVR9uIb6mGf8A9aqDgiL7QTAAAAAASUVORK5CYII="/>
+                        <li className="list-group-item mb-2 text-center"><img className='mr-2' alt='Kielo email' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABoElEQVRIie2UsYsTQRSHvxeXra0spgz4F4iFB3bRxlJsDi6E4MwkcGBlc417lYViIUhgd4toKXbaaWVhY5firvIqe685hJCdZ5Mcub3dXLLB7r5u3rz5frzHsnDNFUi5MBwO27PZrN1EFkXRyWg0OrlQKzcVRdEVkRdNAoqiOASSlQELVPXBJnIR+VpVrw3IsuzbJgHOucp6a/lgrd0BdjcRl9idO865MIGIfAdubBFwe+4495ZX1AIC0HLOZdPp9Pl4PD5dZez1ejfjOH41PwZKW2ldfsJr4BDoxnF8bK19XCd3zj2K43gC9IC3IvKm3FMV8DdN0ySEcBf4LSKfvPef+/2+WTQMBoNbzrkPwBfgj6rupGn6TFXP1gkAIM/ziTHmnqoeqGoniqKJ977rve+GEI6AJ6p6YIy5k2XZzzpP7WcKkCTJDHjpnPsIZKr6fn71I4TwNM/z41XvV06wTJqmv4wxHWAf2DfG3F9HDldMsEySJAF4t27/grUm2Ib/HlC1ora1ttPQd+k3XxWwJyJ7DQMAtDZAVR9uIb6mGf8A9aqDgiL7QTAAAAAASUVORK5CYII="/>
                             Address Cras justo odio
                         </li>
                     </ul>
@@ -39,7 +39,7 @@ const Footer = () => {
                         </div>
                         <div className="">
                             <h5 className="my-3">
-                                developed &nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp; <span>Helmi Nguyen</span> 
+                                developed &nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp; <a href='https://github.com/littlesoldier2019'><span>Helmi Nguyen</span></a>
                             </h5> 
                         </div>
                     </div>
@@ -47,30 +47,30 @@ const Footer = () => {
                         <ul className="list-group list-group-flush my-5 d-flex align-items-end flex-column">
                             <li className="list-group-item mb-4 py-1 text-center">
                                 Contact &nbsp;
-                                <img src="https://img.icons8.com/android/8/000000/up.png"/>              
+                                <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/up.png"/>              
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
                                 Products &nbsp;
-                                <img src="https://img.icons8.com/android/8/000000/right.png"/>                         
+                                <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/right.png"/>                         
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
                                 Container Diary &nbsp;
-                                <img src="https://img.icons8.com/android/8/000000/right.png"/>    
+                                <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/right.png"/>    
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
                                 Legal Annoucement &nbsp;
-                                <img src="https://img.icons8.com/android/8/000000/right.png"/>    
+                                <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/right.png"/>    
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
                                 Become Our Suppliers &nbsp;
-                                <img src="https://img.icons8.com/android/8/000000/right.png"/>    
+                                <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/right.png"/>    
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
                                 Get Quotation &nbsp;
-                                <img src="https://img.icons8.com/android/8/000000/right.png"/>    
+                                <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/right.png"/>    
                             </li>
                             <li className="list-group-item text-center py-1 px-2">
-                                <a href='https://www.facebook.com/kieloconsultancy/'><img className='facebook-icon' src="https://img.icons8.com/material-rounded/18/000000/facebook-f--v2.png"/></a>
+                                <a href='https://www.facebook.com/kieloconsultancy/'><img className='facebook-icon' alt='kielo consultancy' src="https://img.icons8.com/material-rounded/18/000000/facebook-f--v2.png"/></a>
                             </li>
                         </ul>
                     </div>

@@ -1,7 +1,6 @@
 import React from 'react';
 import Header from '../share/Header';
 import SubHero from '../share/SubHero';
-import Slogan from '../share/Slogan';
 import MiddleLine from '../share/MiddleLine';
 import ProductDetail from '../product/ProductDetail';
 import Footer from '../share/Footer';
