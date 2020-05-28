@@ -3,8 +3,8 @@ import '../../assets/styles/Button.css';
 
 const Button = (props) => {
   return (
-    <div className="btn-container d-flex justify-content-end px-5">
-        <button type={props.type} className="btn btn-dark px-4 py-2">
+    <div className="btn-container d-flex justify-content-xs-start justify-content-md-end px-sm-5 px-md-5">
+        <button type={props.type} className="btn btn-dark px-sm-0 px-md-4 py-2">
             <span className="mr-2">{props.text}</span>
             <span>
                 <img className="btn-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAAbUlEQVQ4jeWSsQmAQBAE50VTO7ENwUww0QaN/IrEAqzBYA38h8/U00BwooODgb09+A+SKkn5E8EsaZJUWAWLDnwqcWHZAfWJowfKMHtgcM5t0b7qPiNAZsqTECO0QGOOcIXkiLYm3qjx2SN9lx19bYG9khhYAgAAAABJRU5ErkJggg=="/>

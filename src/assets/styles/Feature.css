@@ -1,5 +1,4 @@
 .feature-container {
-    height: 575px;
     margin: 100px 0 50px 0;
 }
 
@@ -9,5 +8,4 @@
 
 .feature-item2 li {
     font-size: 14px;
-    padding: 2rem;
 }

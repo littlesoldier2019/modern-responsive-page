@@ -97,14 +97,9 @@ h5 {
     text-transform: uppercase;
 }
 
-.row {
-  flex-wrap: nowrap;
+.App {
+    width: 100vw;
 }
-
-.section {
-  height: 825px;
-}
-
 .btn-icon {
   vertical-align: sub;
 
