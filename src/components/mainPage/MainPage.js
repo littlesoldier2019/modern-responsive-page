@@ -16,7 +16,7 @@ function MainPage() {
       <Header />
       <Hero />
       <MiddleLine />
-      <Slogan text='"Wij produceren uw stalen deuren &amp; meubels compleet op maat"'/>
+      <Slogan text='"We have a chance to do something extraordinary. Let love and kindness be our roadmap.”― Johnny Corn'/>
       <SectionLeft />
       <SectionRight />
       <Feature />

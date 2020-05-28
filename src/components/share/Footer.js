@@ -39,7 +39,7 @@ const Footer = () => {
                         </div>
                         <div className="">
                             <h5 className="">
-                                designed &amp; developed &nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp; <span>Helmi Nguyen</span> 
+                                developed &nbsp;&nbsp;&nbsp; / &nbsp;&nbsp;&nbsp; <span>Helmi Nguyen</span> 
                             </h5> 
                         </div>
                     </div>
@@ -47,21 +47,30 @@ const Footer = () => {
                         <ul className="list-group list-group-flush my-5 d-flex align-items-end flex-column">
                             <li className="list-group-item mb-4 py-1 text-center">
                                 Contact &nbsp;
-                                <img src="https://img.icons8.com/android/8/000000/up.png"/>
-                                
+                                <img src="https://img.icons8.com/android/8/000000/up.png"/>              
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
                                 Products &nbsp;
-                                <img src="https://img.icons8.com/android/8/000000/right.png"/> 
-                                
+                                <img src="https://img.icons8.com/android/8/000000/right.png"/>                         
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
-                                Quotation &nbsp;
-                                <img src="https://img.icons8.com/android/8/000000/right.png"/> 
-                                
+                                Container Diary &nbsp;
+                                <img src="https://img.icons8.com/android/8/000000/right.png"/>    
+                            </li>
+                            <li className="list-group-item mb-4 py-1 text-center">
+                                Legal Annoucement &nbsp;
+                                <img src="https://img.icons8.com/android/8/000000/right.png"/>    
+                            </li>
+                            <li className="list-group-item mb-4 py-1 text-center">
+                                Become Our Suppliers &nbsp;
+                                <img src="https://img.icons8.com/android/8/000000/right.png"/>    
+                            </li>
+                            <li className="list-group-item mb-4 py-1 text-center">
+                                Get Quotation &nbsp;
+                                <img src="https://img.icons8.com/android/8/000000/right.png"/>    
                             </li>
                             <li className="list-group-item text-center py-1 px-2">
-                                <img className='facebook-icon' src="https://img.icons8.com/material-rounded/18/000000/facebook-f--v2.png"/>
+                                <a href='https://www.facebook.com/kieloconsultancy/'><img className='facebook-icon' src="https://img.icons8.com/material-rounded/18/000000/facebook-f--v2.png"/></a>
                             </li>
                         </ul>
                     </div>

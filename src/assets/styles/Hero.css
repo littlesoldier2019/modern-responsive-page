@@ -24,3 +24,7 @@
 .item2 li {
     background-color: #f5f5f5;
 }
+
+.item2 .list-group-item {
+    padding: 0.75rem 0;
+}

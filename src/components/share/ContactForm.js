@@ -8,7 +8,7 @@ const ContactForm = () => {
     <div className="row">
         <div className="col-sm-12 col-md-6 d-flex justify-content-end align-items-center my-5 bg-light section">
             <div className='contact-form-container'>
-              <h2 className='mb-4'>Contact Information</h2> 
+              <h2 className='mb-4'>Contact Us</h2> 
               <form>
                     <div className="form-group">
                         <label htmlFor="name">Name</label>

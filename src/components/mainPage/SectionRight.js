@@ -11,10 +11,19 @@ const SectionRight = () => {
             </div>
             <div className="col-sm-12 col-md-6 d-flex justify-content-center align-items-center p-5  section section-item">
                 <div>
-                    <h2 className="mb-5 px-5">Stalen deuren op maat</h2>
-                    <p className='mb-5 px-5'>Bij Groener Stalen Interieur worden alle stalen deuren altijd naar uw wensen ontworpen en geproduceerd. Door het gebruik van staal zijn veel stijlvolle, stoere en strakke ontwerpen mogelijk.</p>
-                    <p className='mb-5 px-5'>Daarnaast leveren wij een aantal verschillende typen deuren: taats-, schuif- en scharnierdeuren. Daarnaast produceren wij stalen raamkozijnen welke het plaatje compleet maken.</p>
-                    <Button text='More information' type='button'/>
+                    <h2 className="mb-5">make the sourcing process become simple and cost effective</h2>
+                    <p className='mb-5'>
+                        We provide sourcing service to find a suitable factory for your need
+                        We do the quilification service, to check the qulificatio with local legistration 
+                        We provide on site QC service to ensure the good conformance with the proof sample
+                        We coordinate with shipping line to handle the container to your place 
+                    </p>
+                    <p className='mb-5'>
+                        You are brough directly to the seller after signing a consultant agreement with us. The bilingual contract is negotiated and agreed directly between you and factory seller. 
+                        Our service charge for management fee is 5% on contract value between you and seller
+                        Third party charge is billed directly to you and our service is finding a best party in price, and we in charge for checking the trustworhty of third party. 
+                    </p>
+                    <Button text='check products availability' type='button'/>
                 </div>
             </div>
         </div>
