@@ -4,7 +4,7 @@ import Logo from '../../assets/image/KieloConsultancy.JPG';
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-white mx-5">
+    <nav className="navbar navbar-expand-lg navbar-light bg-white mx-md-5">
         <div className='navbar-brand'>
             <img src={Logo} width="100%" height="100%" alt="favicon" loading="lazy"/>
         </div>
