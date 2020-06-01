@@ -7,7 +7,7 @@ import ProductDetail from '../product/ProductDetail';
 const Product = () => {
   return (
     <>
-        <SubHero />
+        <SubHero title='Products'/>
         <MiddleLine />
         <ProductDetail />
     </>

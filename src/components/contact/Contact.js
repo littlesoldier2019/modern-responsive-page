@@ -6,7 +6,7 @@ const Contact = () => {
     <div className="row">
         <div className="container">
             <div className="row">
-                <div className="col-sm m-auto py-5 text-center">
+                <div className="col-sm m-auto py-2 py-md-5 text-center">
                     Under construction
                 </div>
             </div>

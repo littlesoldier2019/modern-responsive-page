@@ -7,7 +7,7 @@ import Logo from '../../assets/image/Asset-4.png';
 const Footer = () => {
   return (
     <>
-        <div className="container my-5 py-5">
+        <div className="container my-1 py-1 my-md-5 py-md-5">
             <div className="row my-5 footer-contact">
                 <div className="col-sm-12 col-md-6 col-lg-4">
                     <ul className="list-group list-group-flush">
@@ -33,9 +33,9 @@ const Footer = () => {
             </div>
         </div>
         <div className='footer-sitemap'>
-            <div className="container mt-5">
+            <div className="container mt-0 mt-md-5">
                 <div className="row">
-                    <div className="col-sm-12 col-md-6 col-lg-8 my-5 d-flex justify-content-between flex-column">
+                    <div className="col-sm-12 col-md-6 col-lg-8 my-0 my-md-5 py-3 py-md-5 d-flex justify-content-between flex-column">
                         <div>
                             <img src={Logo} className="img-fluid" alt="Kielo brochure"/>
                         </div>
@@ -45,8 +45,8 @@ const Footer = () => {
                             </h5> 
                         </div>
                     </div>
-                    <div className="col-sm-12 col-md-6 col-lg-4 my-5">
-                        <ul className="list-group list-group-flush my-5 d-flex align-items-end flex-column">
+                    <div className="col-sm-12 col-md-6 col-lg-4 my-3 my-md-5">
+                        <ul className="list-group list-group-flush my-0 my-md-5 d-flex align-items-end flex-column">
                             {/* <li className="list-group-item mb-4 py-1 text-center">
                                 <Link to={Routes.quotation}>Contact &nbsp;</Link>
                                 <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/up.png"/>              

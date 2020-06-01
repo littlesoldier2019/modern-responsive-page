@@ -1,16 +1,12 @@
 import React from 'react';
 import '../../assets/styles/SubHero.css';
-import cover1 from '../../assets/image/cover2.jpg';
 
-const SubHero = () => {
+const SubHero = (props) => {
   return (
-    <div className="card subhero-container mx-5">
-        <img className="card-img" src={cover1} alt="Kielo Consultancy"/>   
-        <div className="subhero row">
-            <div className="col bg-white d-flex justify-content-center align-items-center content item1">
-                <div >
-                    <h1>Products</h1>
-                </div> 
+    <div className="subhero-container">  
+        <div className="subhero row d-flex justify-content-end align-items-end">
+            <div className="col-12 col-md-6 bg-light d-flex justify-content-center align-items-center item1">
+                <h1>{props.title}</h1>
             </div>
         </div>
     </div>

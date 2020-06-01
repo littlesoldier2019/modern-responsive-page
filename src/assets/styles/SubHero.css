@@ -1,5 +1,6 @@
 .subhero-container {
-    height: 60vh;
+    height: 50vh;
+    background-image: url('../image/cover2.jpg');
 }
 
 .subhero-container img {
@@ -7,10 +8,9 @@
 }
 
 .subhero {
-    height: 50%;
-    width: 50%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    margin: 0;
+    height: 100%;
+}
+
+.subhero div {
+    height: 40%;
 }

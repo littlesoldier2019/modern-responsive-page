@@ -6,9 +6,9 @@ import Button from './Button';
 const ContactForm = () => {
   return (
     <div className="row">
-        <div className="col-md-12 col-lg-6 d-flex justify-content-end align-items-center my-5 bg-light section">
+        <div className="col-md-12 col-lg-6 d-flex justify-content-end align-items-center my-3 my-md-5 bg-light section">
             <div className='contact-form-container'>
-              <h2 className='mb-4'>Contact Us</h2> 
+              <h2 className='mb-1 mb-md-4'>Contact Us</h2> 
               <form>
                     <div className="form-group">
                         <label htmlFor="name">Name</label>
@@ -30,7 +30,7 @@ const ContactForm = () => {
         </div>
         <div 
             style={{backgroundImage: `url(${image}`, backgroundSize: 'cover'}}
-            className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center  my-5 section"
+            className="col-md-12 col-lg-6 d-flex justify-content-center align-items-center my-3 my-md-5 section"
             >
         </div>
     </div>
