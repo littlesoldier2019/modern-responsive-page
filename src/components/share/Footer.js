@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import Routes from '../../constants/route';
 import '../../assets/styles/Footer.css';
 import Logo from '../../assets/image/Asset-4.png';
 
@@ -45,28 +47,28 @@ const Footer = () => {
                     </div>
                     <div className="col-sm-12 col-md-6 col-lg-4 my-5">
                         <ul className="list-group list-group-flush my-5 d-flex align-items-end flex-column">
-                            <li className="list-group-item mb-4 py-1 text-center">
-                                Contact &nbsp;
+                            {/* <li className="list-group-item mb-4 py-1 text-center">
+                                <Link to={Routes.quotation}>Contact &nbsp;</Link>
                                 <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/up.png"/>              
-                            </li>
+                            </li> */}
                             <li className="list-group-item mb-4 py-1 text-center">
-                                Products &nbsp;
+                                <Link to={Routes.products}>Products &nbsp;</Link>
                                 <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/right.png"/>                         
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
-                                Container Diary &nbsp;
+                                <Link to={Routes.news}>Container Diary &nbsp;</Link>
                                 <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/right.png"/>    
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
-                                Legal Annoucement &nbsp;
+                                <Link to={Routes.news}>Legal Annoucement &nbsp;</Link>
                                 <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/right.png"/>    
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
-                                Become Our Suppliers &nbsp;
+                                <Link to={Routes.suppliers}>Become Our Suppliers &nbsp;</Link>
                                 <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/right.png"/>    
                             </li>
                             <li className="list-group-item mb-4 py-1 text-center">
-                                Get Quotation &nbsp;
+                                <Link to={Routes.quotation}>Get Quotation &nbsp;</Link>
                                 <img alt='kielo consultancy' src="https://img.icons8.com/android/8/000000/right.png"/>    
                             </li>
                             <li className="list-group-item text-center py-1 px-2">

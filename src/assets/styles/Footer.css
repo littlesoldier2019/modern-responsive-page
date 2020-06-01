@@ -26,6 +26,11 @@
     transition: all .2s ease-in-out;
 }
 
+.footer-sitemap .list-group-item a,
+.footer-sitemap .list-group-item a:active {
+    color: black;
+}
+
 .footer-sitemap .list-group-item:hover {
     transform: scale(1.1);
 }
