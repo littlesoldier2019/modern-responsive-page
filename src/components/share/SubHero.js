@@ -5,8 +5,8 @@ const SubHero = (props) => {
   return (
     <div className="subhero-container">  
         <div className="subhero row d-flex justify-content-end align-items-end">
-            <div className="col-12 col-md-6 bg-light d-flex justify-content-center align-items-center item1">
-                <h1>{props.title}</h1>
+            <div className="col-sm-6 d-flex bg-light justify-content-center align-items-center item1">
+                <h1 className='p-4 p-md-5'>{props.title}</h1>
             </div>
         </div>
     </div>

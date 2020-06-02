@@ -3,9 +3,9 @@ import Button from '../share/Button';
 
 const QuotationForm = () => {
     return (
-        <div className='container my-5 p-5 bg-light'>
-            <h2 className='text-center mt-2 mt-md-5 mb-2'>Contact us</h2>
-            <p className='text-center mb-4 mb-md-5'>Please complete the following form. We will get back to you shortly with quotation for your interested products.</p>
+        <div className='container my-3 p-3 my-md-5 pd-5 bg-light'>
+            <h2 className='text-center my-3 mt-md-5'>Inquiry</h2>
+            <p className='text-center mb-3 mb-md-5'>Please complete the following form. We will get back to you shortly with quotation for your interested products.</p>
             <form>
                 <div className="form-row">
                     <div className="form-group col-12 col-md-6">
@@ -39,8 +39,8 @@ const QuotationForm = () => {
                 </div>
                 <fieldset className="form-group">
                     <div className="row">
-                        <legend className="col-form-label col-sm-2 pt-0">Type of Business</legend>
-                        <div className="col-sm-10">
+                        <legend className="col-form-label col-sm-3 pt-0">Type of Business</legend>
+                        <div className="col-sm-9">
                             <div className="form-check">
                                 <input className="form-check-input" type="radio" name="importer" id="importer" />
                                 <label className="form-check-label" htmlFor="importer">
@@ -76,8 +76,8 @@ const QuotationForm = () => {
                 </fieldset>
                 <fieldset className="form-group mt-4">
                     <div className="row">
-                        <legend className="col-form-label col-sm-2 pt-0">Volume Traded</legend>
-                        <div className="col-sm-10">
+                        <legend className="col-form-label col-sm-3 pt-0">Volume Traded</legend>
+                        <div className="col-sm-9">
                             <div className="form-check">
                                 <input className="form-check-input" type="radio" name="below1thousand" id="below1thousand" value="below1thousand" />
                                 <label className="form-check-label" htmlFor="below1thousand">
@@ -107,8 +107,8 @@ const QuotationForm = () => {
                 </fieldset>
                 <fieldset className="form-group mt-4">
                     <div className="row">
-                        <legend className="col-form-label col-sm-2 pt-0">Trade Terms</legend>
-                        <div className="col-sm-10">
+                        <legend className="col-form-label col-sm-3 pt-0">Trade Terms</legend>
+                        <div className="col-sm-9">
                             <div className="form-check">
                                 <input className="form-check-input" type="radio" name="FOB" id="FOB" value="FOB" />
                                 <label className="form-check-label" htmlFor="FOB">

@@ -5,6 +5,7 @@ import QuotationForm from './QuotationForm';
 import Slogan from '../share/Slogan';
 import CentreText from '../share/CentreText';
 import MiddleLine from '../share/MiddleLine';
+import Space from '../share/Space';
 
 const quotation = {
     title: [
@@ -34,7 +35,9 @@ const Quotation = () => {
         <CentreText title={quotation.title[2]} text={quotation.text[2]}/>
         <MiddleLine />
         <CentreText title={quotation.title[3]} text={quotation.text[3]}/>
+        <Space height='5rem' />
         <QuotationForm />
+        <Space height='5rem' />
     </>
   );
 }
