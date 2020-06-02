@@ -10,10 +10,10 @@ const ProductDetail = () => {
         <div className="row">
             <div className="col-sm-12 col-md-6 py-5 d-flex align-items-start product-container product-item1">
                 <div>
-                    <h2 className="my-5 px-5">product description</h2>
-                    <p className='px-5 font-weight-bold'>
+                    <h2 className="my-5 px-0 px-lg-5">product description</h2>
+                    <p className='px-0 px-lg-5 font-weight-bold'>
                         Bij Groener Stalen Interieur worden alle stalen deuren altijd naar uw wensen ontworpen en geproduceerd. Door het gebruik van staal zijn veel stijlvolle, stoere en strakke ontwerpen mogelijk. Daarnaast leveren we een aantal verschillende typen deuren: taats-, schuif- en scharnierdeuren. Ook produceren wij stalen raamkozijnen welke het plaatje compleet maken.</p>
-                    <p className='mb-5 px-5'>
+                    <p className='mb-5 px-0 px-lg-5'>
                         <br/><br/>
                         TAATSDEUR
                         <br/><br/>
@@ -38,7 +38,7 @@ const ProductDetail = () => {
                     <Button text='Download Brochure' type='button'/>
                 </div>
             </div>
-            <div className="col-sm-12 col-md-6 p-5 d-flex align-items-start justify-content-center product-container product-item2 bg-light p">
+            <div className="col-sm-12 col-md-6 p-3 p-lg-5 d-flex align-items-start justify-content-center product-container product-item2 bg-light p">
                 <div>
                     <h2 className="my-5">specification</h2>
                     <div className="row">
@@ -54,16 +54,16 @@ const ProductDetail = () => {
                     </div>
                     <h2 className="my-5">pictures</h2>
                     <div className="row d-flex flex-wrap justify-content-center product-picture">
-                        <div className="col-sm-12 col-md-6 py-2 d-flex align-items-center justify-content-center">
+                        <div className="col-md-12 col-lg-6 p-2 d-flex align-items-center justify-content-center">
                             <img src={Image1} alt='Kielo Facemask'/>
                         </div>
-                        <div className="col-sm-12 col-md-6 py-2 d-flex align-items-center justify-content-center">
+                        <div className="col-md-12 col-lg-6 p-2 d-flex align-items-center justify-content-center">
                             <img src={Image2} alt='Kielo Facemask'/>
                         </div>
-                        <div className="col-sm-12 col-md-6 py-2 d-flex align-items-center justify-content-center">
+                        <div className="col-md-12 col-lg-6 p-2 d-flex align-items-center justify-content-center">
                             <img src={Image1} alt='Kielo Facemask'/>
                         </div>
-                        <div className="col-sm-12 col-md-6 py-2 d-flex align-items-center justify-content-center">
+                        <div className="col-md-12 col-lg-6 p-2 d-flex align-items-center justify-content-center">
                             <img src={Image2} alt='Kielo Facemask'/>
                         </div>
                     </div>

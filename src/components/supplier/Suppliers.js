@@ -69,7 +69,6 @@ const Suppliers = () => {
       />
       <Space height='3rem'/>
       <SupplierForm />
-      <Space height='5rem'/>
     </>
   );
 }

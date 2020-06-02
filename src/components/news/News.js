@@ -1,17 +1,19 @@
 import React from 'react';
-// import '../../assets/styles/Button.css';
+import SubHero from '../share/SubHero';
+import Slogan from '../share/Slogan';
+import MiddleLine from '../share/MiddleLine';
+import Space from '../share/Space';
+import NewsBoard from '../news/NewsBoard';
 
 const News = () => {
   return (
-    <div className="row">
-        <div className="container">
-            <div className="row">
-                <div className="col-sm m-auto py-5 text-center">
-                    Under construction
-                </div>
-            </div>
-        </div>
-    </div>
+    <>
+        <SubHero title='News'/>
+        <Slogan text='Latest news on our shippments and updates on custom policies'/>
+        <MiddleLine />
+        <NewsBoard />
+        <Space height='3rem'/>
+    </>
   );
 }
 

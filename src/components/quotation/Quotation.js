@@ -37,7 +37,6 @@ const Quotation = () => {
         <CentreText title={quotation.title[3]} text={quotation.text[3]}/>
         <Space height='5rem' />
         <QuotationForm />
-        <Space height='5rem' />
     </>
   );
 }
