@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import '../../assets/styles/ProductDetail.css'
 import Button from '../share/Button';
 import Image1 from '../../assets/image/product1.jpg';
 import Image2 from '../../assets/image/product2.jpg';
+import { ProductContext } from '../../contexts/ProductContext';
 
 const ProductDetail = () => {
+
+    const { product, dispatch, loading, loadAllEntries } = useContext(ProductContext);
+
+    
   return (
     <div className='container py-5'>
         <div className="row">

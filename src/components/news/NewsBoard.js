@@ -1,26 +1,33 @@
-import React from 'react';
-import image from '../../assets/image/1.jpg';
-
-const card = (
-    <div className="col-sm-12 col-md-6 col-lg-4 text-left mb-3 mb-md-5">
-        <img src={image} className="img-fluid" alt="Finnish custom policies" />
-        <p className='text-uppercase my-2 my-md-4 font-weight-bold'>Een stalen scharnierdeur geeft direct een nieuwe</p>
-        <p>Een stalen scharnierdeur geeft direct een nieuwe uitstraling aan uw woonkamer, winkel, loft of kantoor. Wij gebruiken slanke handgrepen met een rolsluiting of extra smalle deurklink-systemen voor een mooie en minimale afwerking</p>
-    </div>
-)
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { NewsContext } from '../../contexts/NewsContext';
+import Spinner from '../share/Spinner';
 
 const News = () => {
-    return (
-        <div className="container">
-            <div className="row">
-                {card}
-                {card}
-                {card}
-                {card}
-                {card}
-                {card}
+    const { news, loading } = useContext(NewsContext);
+    const Card = ({data, id}) => {
+        return (
+            <div className="col-sm-12 col-md-6 col-lg-4 text-justify mb-3 mb-md-5">
+                <Link to={`/news/${id}`}>
+                    <img src={data.fields.imageUrl.fields.file.url} className="img-fluid" alt="Finnish custom policies" />
+                    <p className='text-uppercase my-2 my-md-4 font-weight-bold'>{data.fields.title}</p>
+                    <p>{data.fields.summary}</p>
+                </Link>
             </div>
-        </div>
+        )
+    }
+    const content = news.map(item => <Card data={item} id={item.sys.id}/>)
+
+    return (
+        <>
+            { loading ? <Spinner /> : (
+                <div className="container">
+                    <div className="row">
+                        {content}
+                    </div>
+                </div>
+            )}
+        </>
     );
 }
 

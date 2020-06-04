@@ -37,7 +37,7 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-sm-12 col-md-6 col-lg-8 my-0 my-md-5 py-3 py-md-5 d-flex justify-content-between flex-column">
                         <div>
-                            <img src={Logo} className="img-fluid" alt="Kielo brochure"/>
+                            <img src={Logo} className="img-fluid footer-logo" alt="Kielo brochure"/>
                         </div>
                         <div className="">
                             <h5 className="my-3">

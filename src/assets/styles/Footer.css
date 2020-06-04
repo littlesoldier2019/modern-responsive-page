@@ -11,6 +11,10 @@
     background-color: #1a181a;
 }
 
+.footer-logo {
+    height: 5rem;
+}
+
 .footer-sitemap span {
     color: #555;
 }

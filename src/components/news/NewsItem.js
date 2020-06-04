@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import SubHero from '../share/SubHero';
 import Slogan from '../share/Slogan';
 import MiddleLine from '../share/MiddleLine';
 import image from '../../assets/image/cover1.jpg';
+import { NewsContext } from '../../contexts/NewsContext';
+import { useParams } from 'react-router-dom';
 
 const content = {
   title: [
@@ -17,22 +19,23 @@ const content = {
 }
 
 const NewsItem = () => {
+
+  const { news, loading } = useContext(NewsContext);
+  const { id } = useParams();
+  const selectNews = news.filter((item) => item.sys.id === id)[0];
+
   return (
     <>
       <SubHero title='News' />
-      <Slogan text={content.title[0]} />
+      <Slogan text={selectNews.fields.title} />
       <MiddleLine />
       <div className="container">
         <div className="row">
-          <img src={image} className="img-fluid mx-auto" alt="Finnish custom policies" />
+          <img src={selectNews.fields.imageUrl.fields.file.url} className="img-fluid mx-auto" alt="Finnish custom policies" />
         </div>
         <div className="row">
           <div className="col-sm-12 col-md-10 col-lg-6 m-auto py-3 py-md-5 text-justify">
-            <p>{content.text[0]}</p>
-            <br/><br/>
-            <p>{content.text[0]}</p>
-            <br/><br/>
-            <p>{content.text[0]}</p>
+            {/* <p>{selectNews.fields.content}</p> */}
           </div>
         </div>
       </div>

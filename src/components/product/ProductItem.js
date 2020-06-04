@@ -1,10 +1,10 @@
 import React from 'react';
 import SubHero from '../share/SubHero';
 import MiddleLine from '../share/MiddleLine';
-import ProductDetail from '../product/ProductDetail';
+import ProductDetail from './ProductDetail';
 
 
-const Product = () => {
+const ProductItem = () => {
   return (
     <>
         <SubHero title='Products'/>
@@ -14,4 +14,4 @@ const Product = () => {
   );
 }
 
-export default Product;
+export default ProductItem;

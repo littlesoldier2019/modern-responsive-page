@@ -80,9 +80,9 @@ const SupplierForm = () => {
                         </div>
                     </div>
                 </fieldset>
-                <div class="form-group">
-                    <label for="catalog">Upload your product catalog</label>
-                    <input type="file" class="form-control-file" name="catalog" id="catalog" />
+                <div className="form-group">
+                    <label htmlFor="catalog">Upload your product catalog</label>
+                    <input type="file" className="form-control-file" name="catalog" id="catalog" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="factory-info">Other information about your manufactories</label>
