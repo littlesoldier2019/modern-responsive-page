@@ -1,0 +1,16 @@
+.blog_pre {
+    white-space: pre-wrap; /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */
+    white-space: -o-pre-wrap; /* Opera 7 */
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+  }
+
+  .blog_pre code {
+    font-size: 14px;
+    color: #4f4f4f;
+    font-family: 'Raleway', Sans-serif;
+    margin: 0px;
+  }
+  
+  

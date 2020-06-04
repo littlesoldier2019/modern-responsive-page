@@ -12,7 +12,6 @@ import Suppliers from './components/supplier/Suppliers';
 import Quotation from './components/quotation/Quotation';
 import NewsItem from './components/news/NewsItem';
 import Space from './components/share/Space';
-import Spinner from './components/share/Spinner';
 
 function App() {
     return (
