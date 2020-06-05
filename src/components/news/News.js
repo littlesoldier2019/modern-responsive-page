@@ -12,7 +12,6 @@ const News = () => {
         <Slogan text='Latest news on our shippments and updates on custom policies'/>
         <MiddleLine />
         <NewsBoard />
-        <Space height='3rem'/>
     </>
   );
 }
