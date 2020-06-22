@@ -14,18 +14,18 @@ import Space from '../share/Space';
 
 const suppliers = {
   title: [
-    'Legalized manufacturer',
-    'Experience in the field',
-    'Sufficient capacity',
-    'International standard',
-    'Sustainable production'
+    'AUTHORIZED MANUFACTURER',
+    'EXPERIENCE IN THE FIELD',
+    'SUFFICIENT CAPACITY',
+    'INTERNATIONAL STANDARD',
+    'SUSTAINABLE PRODUCTION'
   ],
   text: [
-    'You are legally registered for producing the sold item in Vietnam planning and investing ministry. Please provide liciense number. We want our clients rest in peace and all custom procedure happen smoothly for all parties',
-    'Your experience in producing the sold items. You know everything about the products to consult your clients for best choice. You can deliver the producs as its best',
-    'Your monthly capacity are guaranteed for high volumn order. You are not only our suppliers but also our partners. We are success together. We are not searching for lowest price, but rather be partner with suppliers for win-win partnership',
-    'Your factory followes international standard in terms of quality control and safety. You produce products with internation standard which has been certified and approved by trustworthy organizations',
-    'Your business operates with awareness on impact toward environment and society. You promise to bring best products out of sustainable resources with the aim to protect the environment'
+    'You need to be authorized by the Vietnamese Ministry of Planning and Investment to manufacture the products to be supplied. Please provide your license number. We want our clients to rest assured of all legal matters and custom procedures to go smoothly for all parties involved.',
+    'You need to be experienced in producing the items to be supplied. You need to be well-informed about the products to assist your clients in making the best choices. You need to be able to deliver the products in their best quality possible.',
+    'Your monthly capacity needs to be sufficient for high-volume orders. You are not only our suppliers but also our partners. We will succeed together. We are not searching for the lowest prices, but rather win-win partnerships.',
+    'Your factory needs no comply with international standards in terms of quality control and safety. You need to be able to produce products that meet international standards that are certified and approved by trusted organizations.',
+    'Your business needs to operate with awareness of its impact on the environment and the society. You promise to create the best products from sustainable resources with the aim to protect the environment.'
   ],
   image: [
     image1,
@@ -40,7 +40,7 @@ const Suppliers = () => {
   return (
     <>
       <SubHero title='Become our suppliers' />
-      <Slogan text='Let us bring your products to the world' />
+      <Slogan text='Let us bring your products to the global market.' />
       <MiddleLine />
       <ContentLeft
         title={suppliers.title[0]}

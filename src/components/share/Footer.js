@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import Routes from '../../constants/route';
+import Routes from '../../helpers/route';
 import '../../assets/styles/Footer.css';
 import Logo from '../../assets/image/Asset-4.png';
 

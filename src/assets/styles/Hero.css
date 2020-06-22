@@ -3,7 +3,8 @@
     height: 90vh;
     width: 100vw;
     background-repeat:no-repeat;
-    background-size:auto;
+    background-position: center;
+    background-size:cover;
 }
 
 .content-container {

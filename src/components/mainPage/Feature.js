@@ -1,6 +1,8 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import '../../assets/styles/Feature.css'
 import Button from '../share/Button';
+import Routes from "../../helpers/route";
 
 const Feature = () => {
   return (
@@ -8,9 +10,9 @@ const Feature = () => {
         <div className="row">
             <div className="col-md-12 col-lg-6 d-flex align-items-center feature-container feature-item1">
                 <div>
-                    <h2 className="my-2 my-md-5 px-2 px-md-5">Meet trustworthy partners</h2>
-                    <p className='mb-2 mb-md-5 px-2 px-md-5'>Kielo Consultancy is the precedent of Pham Hiep Ltd. family business established in 2009, Hochiminh City Vietname. Now we are moving to Finland, we want to continue what we have been good at: be a connector between demand and supply. With over 10 years in international trading business, we understand the market and have strong connection with hundred of manufactuers in different industries.</p>
-                    <p className='mb-2 mb-md-5 px-2 px-md-5'>We are operating in Hochiminh City, Vietnam and in Helsinki, Finland. Our manufactuers locate in Vietname, from there we provide products to clients in Ameria, China, Singapore. Euroupean is our new target market. We work with partners in both ends: helping foreign clients to find qualified suppliers in Vietname, in the same time helping Vietnamese corporation find the high technology products from producers in Europe.</p>
+                    <h2 className="my-2 my-md-5 px-2 px-md-5">CONNECTING TO TRUSTED PARTNERS</h2>
+                    <p className='mb-2 mb-md-5 px-2 px-md-5'>Kielo Consultancy is the continuation of Phạm Hiệp Ltd., a family-owned company founded in 2009 in Ho Chi Minh City, Vietnam. Now that our family have relocated to Finland, we want to continue our business in the area of networking in trading activities, namely to help supply meet demands. Ten years of operation in international trade has equipped us with a deep understanding of different markets and a wide network with manufacturers in Vietnam.</p>
+                    <p className='mb-2 mb-md-5 px-2 px-md-5'>At present, Kielo Consultancy has offices in both Vietnam and Finland. Kielo's partners are mosty based in Southern Vietnam and have been supplying to clients all over the world: the United States, China, Sinagpore... Europe is the our current target market. We promise to be a trusted partner for both parties: international clients in search of quality suppliers and Vietnamese enterprises in search of high-tech products (such as machines and devices) from European manufacturers.</p>
                 </div>
             </div>
             <div className="col-md-12 col-lg-6 d-flex align-items-center justify-content-center feature-container feature-item2 bg-light py-5">
@@ -23,7 +25,7 @@ const Feature = () => {
                                 </div>
                                 <div className="col-9 my-auto px-sm-0"> 
                                     <p className="bg-light px-sm-0">
-                                        Meet directly manufacturers
+                                    Working directly with suppliers
                                     </p>  
                                 </div>
                             </div>
@@ -33,7 +35,7 @@ const Feature = () => {
                                 </div>
                                 <div className="col-9 my-auto px-sm-0"> 
                                     <p className="bg-light px-sm-0">
-                                    Global standard products
+                                    Product quality of global standards
                                     </p>  
                                 </div>
                             </div>
@@ -43,7 +45,7 @@ const Feature = () => {
                                 </div>
                                 <div className="col-9 my-auto px-sm-0"> 
                                     <p className="bg-light px-sm-0">
-                                    Cost-effective transport
+                                    Optimized cost-effective logistics
                                     </p>  
                                 </div>
                             </div>
@@ -55,7 +57,7 @@ const Feature = () => {
                                 </div>
                                 <div className="col-9 my-auto px-sm-0"> 
                                     <p className="bg-light px-sm-0">
-                                    Latest custome policies
+                                    Up-to-date custom policies
                                     </p>  
                                 </div>
                             </div>
@@ -65,7 +67,7 @@ const Feature = () => {
                                 </div>
                                 <div className="col-9 my-auto px-sm-0"> 
                                     <p className="bg-light px-sm-0">
-                                    Vietnam and Finland office
+                                    Kielo offices in Finland and Vietnam
                                     </p>  
                                 </div>
                             </div>
@@ -75,15 +77,15 @@ const Feature = () => {
                                 </div>
                                 <div className="col-9 my-auto px-sm-0"> 
                                     <p className="bg-light px-sm-0">
-                                    Wholesale or sample
+                                    Wholesale and sample purchase
                                     </p>  
                                 </div>
                             </div>
                         </div>
                     </div>         
                     <div className="row">
-                        <div className="col-12">
-                            <Button text='Get in touch' type='button'/>
+                        <div className="col-12 ml-lg-4">
+                            <Link to={Routes.quotation}><Button text='Get quotation' type='button'/></Link>
                         </div>
                     </div>
                 </div>

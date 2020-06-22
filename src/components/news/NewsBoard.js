@@ -16,7 +16,7 @@ const News = () => {
             </div>
         )
     }
-    const content = news.map(item => <Card data={item} id={item.sys.id}/>)
+    const content = news.map(item => <Card data={item} id={item.sys.id} key={item.sys.id}/>)
 
     return (
         <>

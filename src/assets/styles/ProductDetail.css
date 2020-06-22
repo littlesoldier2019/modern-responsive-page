@@ -7,3 +7,21 @@
     font-size: 14px;
     padding: 1rem;
 }
+
+.blog_pre {
+    white-space: pre-wrap; 
+    white-space: -moz-pre-wrap; 
+    white-space: -pre-wrap; 
+    white-space: -o-pre-wrap; 
+    word-wrap: break-word; 
+  }
+
+  .blog_pre code {
+    font-size: 14px;
+    color: #4f4f4f;
+    font-family: 'Raleway', Sans-serif;
+  }
+
+  .blog_pre code p {
+    margin: 1rem 0;
+  }

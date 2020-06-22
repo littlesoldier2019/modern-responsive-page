@@ -2,3 +2,10 @@
     width: 570px;
     padding: 8%;
 }
+
+.contact-image {
+    background-image: url('../image/contactform.jpg');
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size:contain;
+}

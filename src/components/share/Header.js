@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from "react-router-dom";
-import Routes from '../../constants/route';
+import Routes from '../../helpers/route';
 import '../../assets/styles/Header.css';
 import Logo from '../../assets/image/KieloConsultancy.png';
 

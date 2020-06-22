@@ -5,8 +5,8 @@ import {contentfulReducer} from './contentfulReducer';
 export const ProductContext = createContext();
 
 const ProductContextProvider = (props) => {
-    const [product, dispatch] = useReducer(contentfulReducer, []);
-    const [loading, setLoading] = useState(true);
+    const [products, dispatch] = useReducer(contentfulReducer, []);
+    const [loadProduct, setLoading] = useState(true);
     const [error, setError] = useState(false);
 
     async function loadAllEntries () {
@@ -14,8 +14,8 @@ const ProductContextProvider = (props) => {
             let postsArr = [];
             const entries = await client.getEntries({ content_type: "product"});
             postsArr = entries.items;
-            dispatch({ type: 'GET_PRODUCTS', product: postsArr });
-            loading ? setLoading(false) : setLoading(false);
+            dispatch({ type: 'GET_PRODUCTS', products: postsArr });
+            setLoading(false);
         }
         catch (err) {
             setError(true);
@@ -24,11 +24,11 @@ const ProductContextProvider = (props) => {
     }
 
     useEffect(() => {
-        loadAllEntries()
+        loadAllEntries();
     }, [])
 
     return (
-        <ProductContext.Provider value={{ product, dispatch, loading, loadAllEntries }}>
+        <ProductContext.Provider value={{ products, loadProduct, error }}>
             {props.children}
         </ProductContext.Provider>
     )

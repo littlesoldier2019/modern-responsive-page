@@ -3,7 +3,7 @@ import '../../assets/styles/Button.css';
 
 const Button = (props) => {
   return (
-    <div className="btn-container d-flex justify-content-xs-start justify-content-md-end px-3 px-md-5 mt-3 mt-md-5">
+    <div className="btn-container d-flex justify-content-xs-start justify-content-md-end mt-3 mt-md-5">
         <button type={props.type} className="btn btn-dark px-4 px-md-4 py-2">
             <span className="mr-2">{props.text}</span>
             <span>

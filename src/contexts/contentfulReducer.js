@@ -3,7 +3,7 @@ export const contentfulReducer = (state, action) => {
         case 'GET_NEWS':
             return [...action.news];
         case 'GET_PRODUCTS':
-            return [...action.product];    
+            return [...action.products];    
         default:
             return state;
     }

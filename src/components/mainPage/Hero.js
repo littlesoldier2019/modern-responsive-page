@@ -7,8 +7,9 @@ const Hero = () => {
         <div className="content-container row d-flex justify-content-end align-items-end">
             <div className="col-sm-12 col-md-6 col-lg-4 bg-white d-flex justify-content-center align-items-center content item1 px-5">
                 <div >
-                    <h1>Get Suppliers &amp; <br/> Clients Connected</h1>
-                    <p className='mt-2'>Our expertise in international trading helps thousand manufactories to bring their products to the marketplace</p>
+                    <h1>Getting Clients &amp; <br/> Suppliers Connected</h1>
+                    <p className='mt-2'>
+Our expertise and experience in international trade can help manufacturers bring their products to suitable markets.</p>
                 </div> 
             </div>
             <div className="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center content item2">
