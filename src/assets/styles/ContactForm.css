@@ -9,3 +9,8 @@
     background-position: center;
     background-size:contain;
 }
+
+.error-message {
+    font-size: 80%;
+    color: red;
+}
