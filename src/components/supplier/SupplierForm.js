@@ -5,39 +5,54 @@ import { FirebaseContext } from '../../contexts/firebase';
 import Button from '../share/Button';
 
 const SupplierForm = () => {
-    const { register, handleSubmit, errors } = useForm();
+    const { register, errors } = useForm();
     const [formData, setFormData] = useState();
     const [error, setError] = useState(false);
     const [message, setMessage] = useState();
     const firebase = useContext(FirebaseContext);
-
-    const sendEmail = () => {
-        Axios.post(
-            'https://us-central1-kielowebsite.cloudfunctions.net/submit',
-            formData,
-        )
-            .then((res) => {
-                if (res.status === 200) {
-                    firebase.cloudDB.collection('emails').add(formData)
-                        .then(res => setMessage("Form submited successfully"))
-                }
-            })
-            .catch(err => setError("Form failed to sent. Please submit again"))
+    const updateInput = (e) => {
+		setFormData({
+			...formData,
+			[e.target.name]: e.target.value,
+		})
     }
-
-    const onSubmit = (data) => {
-        // e.preventDefault();
-        setFormData(data);
-        console.log(data);
+    const sendEmail = () => {
+		Axios.post(
+			'https://us-central1-happy-readers-89709.cloudfunctions.net/submit',
+			formData,
+		)
+			.then((res) => {
+				if (res.status === 200) {
+					firebase.cloudDB.collection('emails').add(formData)
+					.then(res => setMessage("Form submited successfully"))
+				}
+			})
+			.catch(err => setError("Form failed to sent. Please submit again"))
+        }
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setFormData({
+            company: '',
+            address: '',
+            taxNumber: '',
+            businessLicense: '',
+            contactPerson: '',
+            contactPosition: '',
+            email: '',
+            phone: '',
+            productRange: '',
+            tradeTerm: '',
+            catalog: '',
+            factoryInfo: ''
+        });
         sendEmail();
-    };
-  
+    }
     return (
         <div className='bg-light py-lg-5'>
             <div className='container p-3 pd-5 bg-light'>
                 <h2 className='text-center my-3 mt-md-5'>Supplier Form</h2>
                 <p className='text-center mb-3 mb-md-5'>Please complete the following form if you are interested to be our supplier partner.</p>
-                <form onSubmit={handleSubmit(onSubmit)}>
+                <form onSubmit={handleSubmit}>
                     <div className="form-row">
                         <div className="form-group col-12 col-md-6">
                             <label htmlFor="company">Company</label>
@@ -81,7 +96,7 @@ const SupplierForm = () => {
                                     maxLength: { value: 100, message: "Max 100 characters" },
                                     minLength: { value: 3, message: "Min 3 characters" }
                                 })} />
-                            {errors.taxNumber && <p className='error-message'>{errors.taxNumber.message}</p>}
+                            {errors.tax && <p className='error-message'>{errors.tax.message}</p>}
 
                         </div>
                         <div className="form-group col-12 col-md-6">
@@ -156,7 +171,7 @@ const SupplierForm = () => {
                                 name="phone"
                                 ref={register({
                                     required: "Phone number is required",
-                                    maxLength: { value: 20, message: "Max 12 characters" },
+                                    maxLength: { value: 12, message: "Max 12 characters" },
                                     minLength: { value: 6, message: "Min 8 characters" }
                                 })} />
                             {errors.phone && <p className='error-message'>{errors.phone.message}</p>}
@@ -165,27 +180,11 @@ const SupplierForm = () => {
                     <div className="form-row">
                         <div className="form-group col-12 col-md-6">
                             <label htmlFor="productRange">Product range</label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                id="productRange"
-                                name="productRange"
-                                ref={register({
-                                    required: "Product range is required"
-                                })} />
-                            {errors.productRange && <p className='error-message'>{errors.productRange.message}</p>}
+                            <input type="text" className="form-control" id="productRange" name="productRange" />
                         </div>
                         <div className="form-group col-12 col-md-6">
-                            <label htmlFor="capacity">Monthly capacity</label>
-                            <input
-                                type="text"
-                                className="form-control"
-                                id="capacity"
-                                name="capacity"
-                                ref={register({
-                                    required: "Product range is required"
-                                })} />
-                            {errors.capacity && <p className='error-message'>{errors.capacity.message}</p>}
+                            <label htmlFor="phone">Monthly capacity</label>
+                            <input type="text" className="form-control" id="phone" name="phone" />
                         </div>
                     </div>
                     <fieldset className="form-group mt-4">
@@ -228,8 +227,6 @@ const SupplierForm = () => {
                         <textarea className="form-control" id="factoryInfo" name="factoryInfo" rows="8"></textarea>
                     </div>
                     <Button text='submit' />
-                    {error && <p className="font-weight-bold">{error}</p>}
-                    {message && <p className="font-weight-bold">{message}</p>}
                 </form>
             </div>
         </div>
