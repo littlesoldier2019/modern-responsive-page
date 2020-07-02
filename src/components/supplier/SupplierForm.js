@@ -42,7 +42,7 @@ const SupplierForm = () => {
             <div className='container p-3 pd-5 bg-light'>
                 <h2 className='text-center my-3 mt-md-5'>Supplier Form</h2>
                 <p className='text-center mb-3 mb-md-5'>Please complete the following form if you are interested to be our supplier partner.</p>
-                <form data-netlify="true" method="POST">
+                <form onSubmit={handleSubmit}>
                     <div className="form-row">
                         <div className="form-group col-12 col-md-6">
                             <label htmlFor="company">Company</label>
