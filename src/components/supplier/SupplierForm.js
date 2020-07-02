@@ -42,22 +42,7 @@ const SupplierForm = () => {
             <div className='container p-3 pd-5 bg-light'>
                 <h2 className='text-center my-3 mt-md-5'>Supplier Form</h2>
                 <p className='text-center mb-3 mb-md-5'>Please complete the following form if you are interested to be our supplier partner.</p>
-                <form name="contact" method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
-                {/* <form data-netlify="true" method="POST">
+                <form data-netlify="true" method="POST">
                     <div className="form-row">
                         <div className="form-group col-12 col-md-6">
                             <label htmlFor="company">Company</label>
@@ -261,7 +246,7 @@ const SupplierForm = () => {
                     <Button text='submit' />
                     {error && <p className="font-weight-bold">{error}</p>}
                     {message && <p className="font-weight-bold">{message}</p>}
-                </form> */}
+                </form>
             </div>
         </div>
     );
