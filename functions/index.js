@@ -22,9 +22,9 @@ exports.submit = functions.https.onRequest((req, res) => {
 			from: req.body.email,
 			replyTo: req.body.email,
 			to: gmailEmail,
-			subject: `${req.body.name} just messaged me from my website`,
-			text: req.body.message,
-			html: `<p>${req.body.message}</p>`,
+			subject: `${req.body.contactPerson} just contacted via website`,
+			text: req.body,
+			html: `<p>${req.body}</p>`,
 		}
 
 		return mailTransport.sendMail(mailOptions).then(() => {
