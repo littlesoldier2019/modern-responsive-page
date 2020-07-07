@@ -1,37 +1,73 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import Axios from 'axios'
-import { FirebaseContext } from '../../contexts/firebase';
 import Button from '../share/Button';
+import emailjs from 'emailjs-com';
 
 const SupplierForm = () => {
     const { register, handleSubmit, errors } = useForm();
     const [formData, setFormData] = useState();
     const [error, setError] = useState(false);
-    const [message, setMessage] = useState();
-    const firebase = useContext(FirebaseContext);
+    const [message, setMessage] = useState(false);
 
-    const sendEmail = () => {
-        Axios.post(
-            'https://us-central1-kielowebsite.cloudfunctions.net/submit',
-            formData,
-        )
-            .then((res) => {
-                if (res.status === 200) {
-                    firebase.cloudDB.collection('emails').add(formData)
-                        .then(res => setMessage("Form submited successfully"))
-                }
+
+    // const sendEmail = (templateId, variables) => {
+    //     emailjs.send(
+    //       'gmail', templateId,
+    //       variables,
+    //       "user_UWBdejJ5naQLFcokey62a"
+    //       ).then(res => {
+    //         // Email successfully sent alert
+    //         Swal.fire({
+    //           title: 'Form submited successfully',
+    //           icon: 'success'
+    //         })
+    //       })
+    //       // Email Failed to send Error alert
+    //       .catch(err => {
+    //         Swal.fire({
+    //           title: 'Form failed to sent. Please submit again',
+    //           icon: 'error'
+    //         })
+    //         console.error('Email Error:', err)
+    //       })
+    //   }
+
+    // const onSubmit = (data) => {
+    //     // e.preventDefault();
+    //     // setFormData(data);
+    //     console.log(data);
+    //     sendEmail("template_tKzZz3Fl", {
+    //         name: data.contactPerson, 
+    //         email: data.email
+    //     });
+    // };
+
+    const sendEmail = (templateId, templateParams) => {
+        emailjs.send(
+            'gmail', templateId,
+            templateParams,
+            "user_UWBdejJ5naQLFcokey62a"
+        ).then(res => {
+            // Email successfully sent alert
+            setMessage('Form sent successfully')
+        })
+            // Email Failed to send Error alert
+            .catch(err => {
+                setError('Form failed to send')
+                console.error('Email Error:', err)
             })
-            .catch(err => setError("Form failed to sent. Please submit again"))
     }
 
     const onSubmit = (data) => {
         // e.preventDefault();
-        setFormData(data);
+        // setFormData(data);
         console.log(data);
-        sendEmail();
+        sendEmail("template_tKzZz3Fl", {
+            name: data.contactPerson,
+            email: data.email
+        });
     };
-  
+
     return (
         <div className='bg-light py-lg-5'>
             <div className='container p-3 pd-5 bg-light'>
@@ -140,7 +176,7 @@ const SupplierForm = () => {
                                 ref={register({
                                     required: "Email is required",
                                     pattern: {
-                                        value: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+                                        value: /^(([^<>()\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@(([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
                                         message: "Please enter a valid email"
                                     }
                                 })}
@@ -156,7 +192,7 @@ const SupplierForm = () => {
                                 name="phone"
                                 ref={register({
                                     required: "Phone number is required",
-                                    maxLength: { value: 20, message: "Max 12 characters" },
+                                    maxLength: { value: 20, message: "Max 20 characters" },
                                     minLength: { value: 6, message: "Min 8 characters" }
                                 })} />
                             {errors.phone && <p className='error-message'>{errors.phone.message}</p>}
@@ -183,7 +219,7 @@ const SupplierForm = () => {
                                 id="capacity"
                                 name="capacity"
                                 ref={register({
-                                    required: "Product range is required"
+                                    required: "Monthly capacity is required"
                                 })} />
                             {errors.capacity && <p className='error-message'>{errors.capacity.message}</p>}
                         </div>
@@ -225,7 +261,15 @@ const SupplierForm = () => {
                     </div>
                     <div className="form-group">
                         <label htmlFor="factoryInfo">Other information about your manufactories</label>
-                        <textarea className="form-control" id="factoryInfo" name="factoryInfo" rows="8"></textarea>
+                        <textarea
+                            className="form-control"
+                            id="factoryInfo"
+                            name="factoryInfo"
+                            rows="8"
+                            ref={register({required: "This is required"})}
+                        >
+                        </textarea>
+                        {errors.factoryInfo && <p className='error-message'>{errors.factoryInfo.message}</p>}
                     </div>
                     <Button text='submit' />
                     {error && <p className="font-weight-bold">{error}</p>}

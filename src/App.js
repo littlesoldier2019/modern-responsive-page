@@ -15,6 +15,7 @@ import Quotation from './components/quotation/Quotation';
 import NewsItem from './components/news/NewsItem';
 import Space from './components/share/Space';
 import Spinner from './components/share/Spinner';
+import GloveForm from './components/product/GloveForm';
 
 function App() {
   const { loadNews } = useContext(NewsContext);
@@ -30,6 +31,7 @@ function App() {
           <Route exact path={Routes.suppliers} component={Suppliers} />
           <Route exact path={Routes.quotation} component={Quotation} />
           <Route exact path={`${Routes.news}/:id`} component={NewsItem} />
+          <Route exact path={Routes.gloveform} component={GloveForm} />
           <Space />
           <Brochure />
           <Footer />
