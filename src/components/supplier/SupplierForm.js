@@ -5,42 +5,8 @@ import emailjs from 'emailjs-com';
 
 const SupplierForm = () => {
     const { register, handleSubmit, errors } = useForm();
-    const [formData, setFormData] = useState();
     const [error, setError] = useState(false);
     const [message, setMessage] = useState(false);
-
-
-    // const sendEmail = (templateId, variables) => {
-    //     emailjs.send(
-    //       'gmail', templateId,
-    //       variables,
-    //       "user_UWBdejJ5naQLFcokey62a"
-    //       ).then(res => {
-    //         // Email successfully sent alert
-    //         Swal.fire({
-    //           title: 'Form submited successfully',
-    //           icon: 'success'
-    //         })
-    //       })
-    //       // Email Failed to send Error alert
-    //       .catch(err => {
-    //         Swal.fire({
-    //           title: 'Form failed to sent. Please submit again',
-    //           icon: 'error'
-    //         })
-    //         console.error('Email Error:', err)
-    //       })
-    //   }
-
-    // const onSubmit = (data) => {
-    //     // e.preventDefault();
-    //     // setFormData(data);
-    //     console.log(data);
-    //     sendEmail("template_tKzZz3Fl", {
-    //         name: data.contactPerson, 
-    //         email: data.email
-    //     });
-    // };
 
     const sendEmail = (templateId, templateParams) => {
         emailjs.send(
@@ -59,9 +25,6 @@ const SupplierForm = () => {
     }
 
     const onSubmit = (data) => {
-        // e.preventDefault();
-        // setFormData(data);
-        console.log(data);
         sendEmail("template_tKzZz3Fl", {
             name: data.contactPerson,
             email: data.email

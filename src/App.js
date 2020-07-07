@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import { ProductContext } from './contexts/ProductContext';
 import { NewsContext } from './contexts/NewsContext';
@@ -25,13 +25,15 @@ function App() {
       {(loadNews || loadProduct) ? <Spinner /> : (
         <div className="App">
           <Header />
-          <Route exact path={Routes.home} component={MainPage} />
-          <Route exact path={Routes.products} component={ProductItem} />
-          <Route exact path={Routes.news} component={News} />
-          <Route exact path={Routes.suppliers} component={Suppliers} />
-          <Route exact path={Routes.quotation} component={Quotation} />
-          <Route exact path={`${Routes.news}/:id`} component={NewsItem} />
-          <Route exact path={Routes.gloveform} component={GloveForm} />
+          <Switch>
+            <Route exact path={Routes.home} component={MainPage} />
+            <Route exact path={Routes.products} component={ProductItem} />
+            <Route exact path={Routes.news} component={News} />
+            <Route exact path={Routes.suppliers} component={Suppliers} />
+            <Route exact path={Routes.quotation} component={Quotation} />
+            <Route exact path={`${Routes.news}/:id`} component={NewsItem} />
+            <Route exact path={Routes.gloveform} component={GloveForm} />
+          </Switch>
           <Space />
           <Brochure />
           <Footer />
