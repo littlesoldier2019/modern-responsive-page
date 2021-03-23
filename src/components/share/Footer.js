@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="col-sm-12 col-md-6 col-lg-4">
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item mb-2 text-center"><img className='mr-2' alt='Kielo address' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACqElEQVRIic2VvWsUURTFf3cyZBpJk8Ii+g+okBDTCIqgYqFiIRbRFUGz+94amUJFaztFwSbqzsxmtTGNhQFJCIqNbeKgAUWso434UaSQDTNzLTIr68ZZWUXwwjDvnXPfOfe+Nx/wj0N+l+D7vtdsNi1wEtiRw69FZKa/vz+amppq/rFBtVodyrJsHhguSHnlOM6RIAg+FGk43SpvE19R1eNJkgwkSTKgqseAd8BIlmVzvu97RTpuEZFvyzCwkqbpSKPR+NJGz05MTDzv6+tbBkaazWYFuN2TgaqWRARVvdBoNL4YYw4D4Tqlpl6vLxhjLgIPRaRUZFC4RSKyDSBN06c5FABDwBYRCQE8z3uSF7O9SKfQAGgCuK5bmLO6utri1v7E4G1+3w2gqgZ4D6yIiAHwPG9PR+6GKDwDEZlV1d3AOWC+Xq8vAFs70s7n90c9dyAiD4BvwKFqtbqjk7fWDqvqQeCb4zgzPRsEQfBRVWuAZFl2m40v5a0cuxsEwceeDfIurgGfgb3W2vEWXqlUSqq6L+eud9XoRuZiZ0WkAXx1XXc4W49lYFBEzoZheP+vDACx1j5W1SPAs3zNfhGZC8PwKKDdFm94iqy1RlXDfHoziqIrjuOcTtP0JXAgx9+r6hlAjTE3gMsAImLDMIza9X51BqZtfKlcLu+r1WpfgVNAkl8noij6ZK3dD1wqWLvefvukXC7vdBznBfDZ87yhzm+9MeY8QBRFd9rx/J/xARjMsmxseno6bnF97YljY2NXgZ1ArVarLXRWE8fxUhzHS5344uJiOjo6ullEdomIxnE81+J+bNHk5OQmYBxARO51ivwuXNeNWD/wku/7Az/w1iBJkhIwAKCqb4zZsJ1dI03T1nDT2traOBD91IGIVHqtukv0Vt1/Hd8BIrkMRMOJh+8AAAAASUVORK5CYII="/>
-                        Alberganesplanadi 2 Espoo Finland
+                        Männistöntie 4 C5 Veikkola, Kirkkonummi, Finland
                         </li>
                     </ul>
                 </div>
@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className="col-sm-12 col-md-6 col-lg-4">
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item mb-2 text-center"><img className='mr-2' alt='Kielo email' src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABoElEQVRIie2UsYsTQRSHvxeXra0spgz4F4iFB3bRxlJsDi6E4MwkcGBlc417lYViIUhgd4toKXbaaWVhY5firvIqe685hJCdZ5Mcub3dXLLB7r5u3rz5frzHsnDNFUi5MBwO27PZrN1EFkXRyWg0OrlQKzcVRdEVkRdNAoqiOASSlQELVPXBJnIR+VpVrw3IsuzbJgHOucp6a/lgrd0BdjcRl9idO865MIGIfAdubBFwe+4495ZX1AIC0HLOZdPp9Pl4PD5dZez1ejfjOH41PwZKW2ldfsJr4BDoxnF8bK19XCd3zj2K43gC9IC3IvKm3FMV8DdN0ySEcBf4LSKfvPef+/2+WTQMBoNbzrkPwBfgj6rupGn6TFXP1gkAIM/ziTHmnqoeqGoniqKJ977rve+GEI6AJ6p6YIy5k2XZzzpP7WcKkCTJDHjpnPsIZKr6fn71I4TwNM/z41XvV06wTJqmv4wxHWAf2DfG3F9HDldMsEySJAF4t27/grUm2Ib/HlC1ora1ttPQd+k3XxWwJyJ7DQMAtDZAVR9uIb6mGf8A9aqDgiL7QTAAAAAASUVORK5CYII="/>
-                        lydia@kielo.io
+                        lydia@kielofinland.com
                         </li>
                     </ul>
                 </div>
