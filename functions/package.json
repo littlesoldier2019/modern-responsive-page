@@ -15,7 +15,7 @@
     "axios": "^0.19.2",
     "cors": "^2.8.5",
     "f": "^1.4.0",
-    "firebase-admin": "^8.10.0",
+    "firebase-admin": "^11.4.1",
     "firebase-functions": "^3.6.0",
     "nodemailer": "^6.4.6"
   },
