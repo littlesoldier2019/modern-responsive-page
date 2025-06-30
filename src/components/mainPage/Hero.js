@@ -8,7 +8,7 @@ const Hero = () => {
         <div className="col-sm-12 col-md-6 col-lg-4 bg-white d-flex justify-content-center align-items-center content item1 px-5">
           <div>
             <h1>
-              Getting Clients &amp; <br /> Suppliers Connected
+              Your Local Gate <br /> to Enter Global Market
             </h1>
             <p className="mt-2">
               Our expertise and experience in international trade can help
