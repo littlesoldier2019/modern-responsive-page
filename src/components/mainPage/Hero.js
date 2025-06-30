@@ -25,7 +25,7 @@ const Hero = () => {
                   alt="Kielo address"
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACqElEQVRIic2VvWsUURTFf3cyZBpJk8Ii+g+okBDTCIqgYqFiIRbRFUGz+94amUJFaztFwSbqzsxmtTGNhQFJCIqNbeKgAUWso434UaSQDTNzLTIr68ZZWUXwwjDvnXPfOfe+Nx/wj0N+l+D7vtdsNi1wEtiRw69FZKa/vz+amppq/rFBtVodyrJsHhguSHnlOM6RIAg+FGk43SpvE19R1eNJkgwkSTKgqseAd8BIlmVzvu97RTpuEZFvyzCwkqbpSKPR+NJGz05MTDzv6+tbBkaazWYFuN2TgaqWRARVvdBoNL4YYw4D4Tqlpl6vLxhjLgIPRaRUZFC4RSKyDSBN06c5FABDwBYRCQE8z3uSF7O9SKfQAGgCuK5bmLO6utri1v7E4G1+3w2gqgZ4D6yIiAHwPG9PR+6GKDwDEZlV1d3AOWC+Xq8vAFs70s7n90c9dyAiD4BvwKFqtbqjk7fWDqvqQeCb4zgzPRsEQfBRVWuAZFl2m40v5a0cuxsEwceeDfIurgGfgb3W2vEWXqlUSqq6L+eud9XoRuZiZ0WkAXx1XXc4W49lYFBEzoZheP+vDACx1j5W1SPAs3zNfhGZC8PwKKDdFm94iqy1RlXDfHoziqIrjuOcTtP0JXAgx9+r6hlAjTE3gMsAImLDMIza9X51BqZtfKlcLu+r1WpfgVNAkl8noij6ZK3dD1wqWLvefvukXC7vdBznBfDZ87yhzm+9MeY8QBRFd9rx/J/xARjMsmxseno6bnF97YljY2NXgZ1ArVarLXRWE8fxUhzHS5344uJiOjo6ullEdomIxnE81+J+bNHk5OQmYBxARO51ivwuXNeNWD/wku/7Az/w1iBJkhIwAKCqb4zZsJ1dI03T1nDT2traOBD91IGIVHqtukv0Vt1/Hd8BIrkMRMOJh+8AAAAASUVORK5CYII="
                 />
-                Männistöntie 4 Veikkola, Kirkkonummi, Finland
+                Moisionkatu 3 A 08100, Lohja, Finland
               </li>
               <li className="list-group-item px-2 px-md-5 ">
                 <img
@@ -41,7 +41,7 @@ const Hero = () => {
                   alt="Kielo phone"
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABqUlEQVRIie2Rv2tTURTHP8f3rqFEqINCN5EuDiryzCRCBgdBQcE9Q4Z7s0g7FUF00cVRcMq92eJfoHSrg1MlhBCKiIu/ty4Vtb5qXnJdWnkkN6Smcet3uufc7/1+LufAoSZI8oUxxg8bvPdPnHNL0wKODNW/R34gcmra8BDgW8AzU8DH/woQkdcBz3FjzPxMAIPB4GXAs5GmaTYTQJZlq0Av13obx/HVZrO5PS0gyhfdbvdnkiQXReQM8K7X6112zm1OGw6jS8Z7/2j3uFAoFIoHCQ8CGo3GK2AVKPb7/cczBwBEUbQE/BCRm7Va7c5BAFGo2W63t0ql0hfgFnAlSZL3nU5nY9hXqVSK5XJ5rtVq/RoHkHEXAFrrhyJyD/DAXWvt3n6oVqsnlVJrwHngK/AJ+Ax8sNYu7wsAiNb6wS4E4Fkcx7fTNN1RSr0AzoUeWWv/5gZ3kJN3zt0XkQrwHbiRZdkbpdT6uPBhTQIAUK/Xn0ZRdAF4DhwDFvfzDiaPaERa60sisgJcB1TIkx/RPwP2ZIw5ISLXvPdl7/1ZETkNzANH84BDTdQfaKl6VB1S+T0AAAAASUVORK5CYII="
                 />
-                0358 466 147 593 - 084 908367 920{" "}
+                +358 4131 113 852{" "}
               </li>
               <li className="list-group-item px-2 px-md-5 ">
                 <img
