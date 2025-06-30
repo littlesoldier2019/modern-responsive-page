@@ -1,12 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import NewsContextProvider from './contexts/NewsContext';
-import ProductContextProvider from './contexts/ProductContext';
-import Firebase, { FirebaseContext } from './contexts/firebase';
+import React from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import NewsContextProvider from "./contexts/NewsContext";
+import ProductContextProvider from "./contexts/ProductContext";
+import Firebase, { FirebaseContext } from "./contexts/firebase";
 
-ReactDOM.render(
+const root = createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
     <FirebaseContext.Provider value={new Firebase()}>
       <NewsContextProvider>
@@ -15,7 +16,5 @@ ReactDOM.render(
         </ProductContextProvider>
       </NewsContextProvider>
     </FirebaseContext.Provider>
-  </React.StrictMode>,
-  document.getElementById('root')
+  </React.StrictMode>
 );
-
